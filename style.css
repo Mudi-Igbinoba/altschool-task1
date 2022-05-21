@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: 'Montserrat', Cambria, Cochin, Georgia, Times,
+        'Times New Roman', serif;
+    background-color: #c9c7c7;
+}
+
+/* Login Page */
+#login {
+    padding: 25px 0;
+    text-align: center;
+}
+
+#login h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 10px 0;
+    color: #255991;
+    font-size: 24px;
+}
+
+#login label {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#login input {
+    margin-top: 8px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+#login button {
+    border: none;
+    padding: 8px 25px;
+    border-radius: 50px;
+    background-color: #255991;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    box-shadow: 2px 5px 2px #6e6d6db2;
+}
+
+#login button:hover {
+    background-color: #fff;
+    color: #255991;
+}
+
+/* Calculator - table method */
+#calc-table {
+    font-weight: bold;
+    padding: 25px;
+}
+
+#calc-table h1 {
+    text-align: center;
+    padding: 10px 0;
+    color: #255991;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#calc-table table {
+    background-color: #fff;
+    width: 250px;
+    height: 300px;
+    padding: 12px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.253);
+}
+
+#calc-table tr {
+    margin: 2px;
+}
+
+#calc-table td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #acc8e5;
+    color: #112a46;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2px;
+}
+
+#calc-table .entry {
+    background-color: #e9e8e8;
+    color: #191919;
+    text-align: right;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: auto;
+}
+
+#calc-table .entry-container {
+    position: relative;
+    bottom: 5px;
+}
+
+#calc-table .result {
+    background-color: #255991;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#calc-table .result-container {
+    position: relative;
+    top: 5px;
+}
+
+#calc-table .math {
+    background-color: #255991;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Calculator(Flex) */
+#calc-flex {
+    font-weight: bold;
+    padding: 25px;
+}
+
+#calc-flex h1 {
+    text-align: center;
+    padding: 10px 0;
+    color: #255991;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#calc-flex .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    width: max-content;
+    height: max-content;
+    padding: 15px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.253);
+}
+
+#calc-flex .row {
+    display: flex;
+    padding: 2px;
+}
+
+#calc-flex .row div {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #acc8e5;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2px;
+}
+
+#calc-flex .row p {
+    color: #112a46;
+}
+
+#calc-flex .entry {
+    background-color: #e9e8e8;
+    color: #191919;
+    align-self: stretch;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+#calc-flex .result {
+    background-color: #255991;
+    align-self: stretch;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#calc-flex .result p {
+    margin: auto;
+    color: #fff;
+    padding: 10px 0px;
+}
+
+#calc-flex .row .math {
+    background-color: #255991;
+}
+
+#calc-flex .row .math p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
